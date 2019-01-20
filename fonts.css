@@ -1,0 +1,388 @@
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    position:absolute;
+    top:70px;
+    left:320px;
+}
+ul li{
+   float:left;
+   width:200px;
+   height:40px;
+  background-color: black;
+  opacity: .8; 
+  line-height: 40px;
+  text-align:center;
+}
+
+ul li a:hover{
+    color:yellow;
+}
+ul li a{
+    text-decoration: none;
+    color:white;
+    display: block;
+}
+ul li ul li{
+    display: none;
+    
+}
+ul li:hover ul li{
+    display:block;
+    position:relative;
+}
+
+
+.icon1{
+  height:18px;
+  width:18px;
+  position:absolute;
+  top:10px;
+  left:255px;
+}
+.icon2{
+  height:18px;
+  width:18px;
+  position:absolute;
+  top:10px;
+  left:438px;
+}
+.icon3{
+  height:18px;
+  width:18px;
+  position:absolute;
+  top:8px;
+ left:58px;
+}
+.icon4{
+  height:20px;
+  width:20px;
+  position:absolute;
+  top:8px;
+left:650px;
+}
+.icon5{
+  height:20px;
+  width:20px;
+  position:absolute;
+  top:8px;
+left:860px;
+}
+a{
+text-decoration: none;
+background-color: transparent;
+color:rgb(0,176,80);
+font-weight: bold;
+}
+.slide{
+    display: block;
+    width:100%;
+    height: 100%;
+    /*background-color: black;*/
+    overflow: hidden;
+    
+}
+.slide > * {
+position:absolute;
+display: block;
+animation:slide 12sec infinite;
+overflow:hidden;
+}
+.slide:nth-child(1){
+    left:0%;
+    animation-delay: -1s;
+    background-image: url("img/kigali1.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.slide:nth-child(2){
+    
+    animation-delay: 2s;
+    background-image: url("img/nairobi.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+.slide:nth-child(3){
+ 
+    animation-delay: 5s;
+    background-image: url("img/scott.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+@keyframes slide{
+0%{left:100%;width:100%;}
+5%{left:0%;}
+25%{left:0%;}
+30%{left:-100%;width:100%;}
+30.0001%{left:-100%;width:0%;}
+100%{left:100%;width:100%;}
+}
+#tbl1 {
+height: 1000px;
+width:1100px;
+position:absolute;
+top:150px;
+left:120px;   
+background-color: rgb(250,250,210); }
+#tbl2{
+height:170px;
+width:1300px;
+background-color: khaki;
+position: absolute;
+top:1270px;
+left:30px;
+}
+.footer-text{
+    color:black;
+}
+
+
+#banner{
+background-color:black;
+height:43px;
+width:1300px;
+position:absolute;
+left:30px;
+
+
+}
+.logo{
+    height:200px;
+    width:200px;
+    position:absolute;
+    top:-5px;
+    left:20px;
+}
+.logo1{
+    height:80px;
+    width:200px;
+    position:absolute;
+    top:20px;
+    left:20px; 
+}
+.contact{
+position: absolute;
+top:15px;
+left:240px;
+color:white;
+word-spacing: 12px;
+}
+.login1{
+
+font-style: normal;
+text-decoration-style: none;
+color:white;
+font-style: normal;
+position:absolute;
+left:1050px;
+top:20px;
+}
+.footer{
+    background-color: grey;
+    height:180px;
+    width:1300px;
+    position:absolute;
+    top:800px;
+    left:30px;
+}
+.dropdown-menu1{
+display: inline-block;
+margin-left:.255em;
+vertical-align: .255;
+}
+.banner-down{
+height:40px;
+background-color:black;
+color:white;   
+}
+.footer1,
+.footer2{
+width:650px;
+text-align: center;
+font-size: 18px;
+}
+.td1{
+width:600px;
+height:250px;
+
+}
+.side1{
+height:240px;
+width:107px;
+position:absolute;
+top:200px;
+}
+.subscribe{
+position:absolute;
+left:490px;
+}
+.gif{
+
+height:350px;
+width:800px;
+position:absolute;
+left:110px;
+top:5px;
+
+}
+
+.flexbox {
+    /*background: linear-gradient(155deg, #55c7ed, #2bb3e0, #3bc1ed);*/
+    background:url("img/banner3.jpeg");
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search {
+    margin: 20px;
+  }
+  
+  .search > h3 {
+    font-weight: normal;
+  }
+  
+  .search > h1,
+  .search > h3 {
+    color: coral;
+    margin-bottom: 15px;
+    text-shadow: 0 1px #0091c2;
+  }
+  
+  .search > div {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .search > div:after {
+    content: "";
+    background: white;
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    top: 40px;
+    right: 2px;
+    transform: rotate(135deg);
+    box-shadow: 1px 0 #0091c2;
+  }
+  
+  .search > div > input {
+    color: black;
+    font-size: 16px;
+    background: transparent;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border: solid 3px yellowgreen;
+    outline: none;
+    border-radius: 35px;
+    box-shadow: 0 1px #0091c2;
+    transition: width 0.5s;
+  }
+  
+  .search > div > input::placeholder {
+    color: #efefef;
+    opacity: 1;
+  }
+  
+  .search > div > input::-ms-placeholder {
+    color: #efefef;
+  }
+  
+  .search > div > input::-ms-input-placeholder {
+    color: #efefef;
+  }
+  
+  .search > div > input:focus,
+  .search > div > input:valid {
+    width: 250px;
+  }
+  
+  /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 26px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+font-size:16px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 26px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+font-size:20px;
+}
+button:hover {
+  opacity: 0.8;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.avatar {
+  width: 200px;
+height:200px;
+  border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+display:none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content Box */
+.modal-content {
+  background-color:whitesmoke;
+  margin: 4% auto 15% auto;
+  border: 1px solid #888;
+  width: 30%; 
+padding-bottom: 30px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  animation: zoom 0.6s
+}
+@keyframes zoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}

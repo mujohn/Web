@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>E-booking Homepage</title>
+<link rel="stylesheet" type="text/css" href="fonts.css">
+<script>
+    // If user clicks anywhere outside of the modal, Modal will close
+    
+    var modal = document.getElementById('modal-wrapper');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+    
+</head>
+<body bgcoloer="red">
+<div id="banner">
+        <span class="contact">
+                <img src="img/phone.png" alt="phone-icon"class="phone-img" >
+                +250785571790 
+                <img src="img/message.png" alt="message ">
+                info@ebooking.com
+            </span>
+<span class="login1"><a   onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:200px; margin-top:200px; margin-left:160px;">LOGIN</a></span>
+<!-- LOGIN FORM -->
+<div id="modal-wrapper" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php">
+          
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+        <img src="img/1.png" alt="Avatar" class="avatar">
+        <h1 style="text-align:center">Login to Book with Discount</h1>
+      </div>
+  
+      <div class="container">
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="password" placeholder="Enter Password" name="psw" required>        
+        <button type="submit">Login</button>
+        <input type="checkbox" style="margin:26px 30px;"> Remember me      
+        <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+      </div>
+      
+    </form>
+    
+  </div>
+  <!--END OF LOGIN FORM-->
+  
+</div>
+<div>
+<img src="img/logo1.png" alt="E-BUSINES" class="logo">
+</div>
+<div class="flexbox">
+    <div class="search">
+      <h1>Reserve best Hotels and Restaurents in the world</h1>
+      <h3>Search your favorite</h3>
+      <div>
+        <input type="text" placeholder="       Search . . ." required>
+      </div>
+      
+    </div>
+    
+  </div>
+<!-- MENU START -->
+
+ <ul>
+<li><a href="home.html"><img class="icon3" src="icon/icon3.png" alt="home icon">Home</a></li>
+<li><a href="hotels.html"><img class="icon1" src="icon/icon1.png" alt="hotel icon">Hotels</a>
+<ul>
+<li><a href="#">Africa </a></li>
+<li><a href="#">Europe</a></li>
+<li><a href="#">Asia</a></li>
+<li><a href="#">America</a></li>
+</ul>
+</li>
+<li><a href="restaurents"><img class="icon2" src="icon/icon2.png" alt="restaurents icon">Restaurents</a></li>
+<li><a href="vacation"><img class="icon4" src="icon/icon4.png" alt="vacation icon">Vacation</a></li>
+<li><a href="flight"><img class="icon5" src="icon/icon5.png" alt="flight icon">Flight</a></li>
+ </ul>   
+<!--END MENU-->
+
+
+
+
+<table  id="">
+<tr >
+<td class="td1" colspan="2">
+    
+    </td>
+
+
+</tr>
+<tr>
+    <td class="hotel"><img src="img/mille.jpg " alt="Mille colline">
+        <img src="img/2000.jpg " alt="2000 Hotel">
+        <img src="img/five.jpg " alt="Five to five Hotel">
+        <img src="img/gloria.jpg " alt="Gloria Hotel">
+    </td>
+    <td></td>
+</tr>
+<tr>
+    <td ></td>
+</tr>
+
+
+
+
+
+</table>
+</table>
+
+<table  id="tbl2">
+<tr>
+    <td colspan="2"><img src="img/logo2.png" alt="E-BUSINES" class="logo1"> 
+    <form class="subscribe">
+  <input type="text" value="Your Email" ><input type="button" value="Subscribe">
+    </form>
+    </td>
+    <td>
+  
+    </td>
+</tr>
+<tr class="banner-down"> <td class="footer1"><p>&copy Copyright © 2018 All rights reserved</p></td>
+<td class="footer2"> For more information find us at our office Kn 02 rt</td></tr>
+
+
+</table>
+</body>
+</html>
